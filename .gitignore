@@ -124,6 +124,10 @@ ipch/
 # TFS 2012 Local Workspace
 $tf/
 
+# Configuration files
+appsettings.json
+dokmobilekey.keystore
+
 # Guidance Automation Toolkit
 *.gpState
 
