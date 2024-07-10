@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockMobile.Api", "DockMobile.Api\DockMobile.Api.csproj", "{3AB3AE65-6FD7-4BA8-8FC3-A74F3813250E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockMobile.ApiClient", "DockMobile.ApiClient\DockMobile.ApiClient.csproj", "{8788EAC1-1167-48EB-8122-4FB3D482A475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockMobile.Maui", "DockMobile.Maui\DockMobile.Maui.csproj", "{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AB3AE65-6FD7-4BA8-8FC3-A74F3813250E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB3AE65-6FD7-4BA8-8FC3-A74F3813250E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB3AE65-6FD7-4BA8-8FC3-A74F3813250E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB3AE65-6FD7-4BA8-8FC3-A74F3813250E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8788EAC1-1167-48EB-8122-4FB3D482A475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8788EAC1-1167-48EB-8122-4FB3D482A475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8788EAC1-1167-48EB-8122-4FB3D482A475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8788EAC1-1167-48EB-8122-4FB3D482A475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225D8EE2-A3BD-439F-A3A3-A666ACEC94D5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C83F832-19ED-41C4-9BC1-0A553C0F3BE4}
+	EndGlobalSection
+EndGlobal

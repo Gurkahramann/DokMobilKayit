@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DockMobile.Maui.MainPage">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Dock Number Entry -->
+        <Entry x:Name="DockNumaraEntry"
+               Placeholder="Dock Numara"
+               Margin="0,10,0,10"
+               IsEnabled="True"
+               Completed="OnDockNumaraCompleted"
+               Grid.Row="0" />
+
+        <!-- Party Number Entry -->
+        <Entry x:Name="PartiNumaraEntry"
+               Placeholder="Parti Numara"
+               Margin="0,10,0,10"
+               IsEnabled="False"
+               Completed="OnPartiNumaraCompleted"
+               Grid.Row="1" />
+
+        <!-- Party Number ListView -->
+        <Grid Margin="0,10,0,10"
+              Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Text="Parti No" 
+                   VerticalOptions="Center" 
+                   Grid.Row="0" />
+            <ListView x:Name="PartyNumberListView"
+                      ItemsSource="{Binding PartiNumaralari}"
+                      VerticalOptions="FillAndExpand"
+                      Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding}" 
+                                       VerticalOptions="Center" />
+                                <Button Text="Sil"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="End"
+                                        WidthRequest="50"
+                                        HeightRequest="40"
+                                        Clicked="OnDeleteButtonClicked"
+                                        CommandParameter="{Binding .}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <!-- Buttons -->
+        <StackLayout Orientation="Horizontal" 
+                     HorizontalOptions="Center"
+                     Margin="0,10,0,0"
+                     Grid.Row="3">
+            <Button Text="Kaydet"
+                    Margin="0,0,10,0"
+                    Clicked="OnKaydetClicked"/>
+            <Button Text="Sıfırla"
+                    Clicked="OnSifirlaClicked"
+                    Margin="0,0,10,0"/>
+
+            <Button Text="Çıkış Yap"
+                    Clicked="OnCikisClicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,6 @@
+@DockMobile.Api_HostAddress = http://localhost:5072
+
+GET {{DockMobile.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
