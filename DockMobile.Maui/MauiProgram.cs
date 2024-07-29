@@ -17,7 +17,7 @@ namespace DockMobile.Maui
             }).UseMauiCommunityToolkit();
             builder.Services.AddApiClientService(options =>
             {
-                options.ApiBaseAddress = "http://192.168.0.13:5015/";
+                options.ApiBaseAddress = "";
             });
             builder.Services.AddSingleton<ApiClientService>();
             builder.Services.AddTransient<MainPage>();
